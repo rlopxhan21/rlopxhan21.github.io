@@ -644,7 +644,7 @@ footer .footer-bottom {
     width: 60%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 4rem;
   }
   .section2 .info-container .info-lists .info-content span {
     text-align: start;
