@@ -548,7 +548,7 @@ footer {
   color: $secondary-text-color;
 
   .footer-container {
-    max-width: 1440px;
+    width: 80%;
     flex-direction: column;
     margin: 0 auto;
 
@@ -687,9 +687,12 @@ footer {
     background-color: $primary-color;
     .info-container {
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 2rem 0.5rem;
 
       .info-lists {
+        width: 50%;
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
@@ -800,5 +803,9 @@ footer {
   }
 
   footer {
+    .footer-bottom {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }
