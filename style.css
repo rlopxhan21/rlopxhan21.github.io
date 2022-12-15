@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: "K2D", monospace;
+  font-size: 1.3rem;
 }
 
 a {
@@ -23,7 +24,6 @@ a {
 
 .flex {
   display: flex;
-  gap: 1rem;
 }
 
 .grid {
@@ -37,6 +37,7 @@ a {
   font-size: 24px;
   margin: auto;
   padding: 1rem 2rem;
+  background-color: #fff;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -73,18 +74,21 @@ a {
   color: #fcc419;
 }
 
-section {
+.navfix {
+  padding: 6rem;
+}
+
+.nav-fix {
   padding: 4rem;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .section1 {
   background-color: #bca900;
-  margin: 10rem auto 3rem auto;
+  margin: 0rem auto 3rem auto;
   padding: 0 2rem;
-  width: 90%;
+  max-width: 90%;
   height: 500px;
+  border-radius: 10px;
   justify-content: space-around;
 }
 .section1 .left {
@@ -131,9 +135,11 @@ section {
 }
 
 .section2 {
-  max-width: 85%;
+  max-width: 70%;
+  background-color: #f8f9fa;
+  border-radius: 100px;
   margin: auto;
-  margin-top: 10rem;
+  margin-bottom: 0;
 }
 .section2 .info-container {
   margin: auto;
@@ -149,6 +155,9 @@ section {
   color: #495057;
   justify-content: space-around;
   align-items: center;
+}
+.section2 .info-container .info-lists .info-content {
+  gap: 1rem;
 }
 .section2 .info-container .info-lists .info-content .icon-container {
   width: 3rem;
@@ -177,32 +186,52 @@ section {
   background-color: #ababab;
 }
 
+.tech-stacks {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.title-skills {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 .section3 {
-  max-width: 85%;
-  margin: auto;
-  margin-top: 5rem;
+  width: 30%;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+  border-radius: 25px;
   justify-content: space-around;
   align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 .section3 .icon-skills {
-  font-size: 64px;
-  height: 60px;
+  height: 80px;
 }
 
 .section4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 8rem;
+  width: 90%;
+  margin: auto;
 }
 .section4 .title {
   font-size: 2rem;
+  margin-bottom: 4rem;
 }
 .section4 .projects-container {
   width: 100%;
-  padding: 3rem 2rem 0 2rem;
-  gap: 2.5rem;
+  padding: 0 2rem 0 0;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  place-items: center;
+  gap: 2.5rem;
 }
 .section4 .projects-container .project-card {
   cursor: pointer;
@@ -210,17 +239,206 @@ section {
   box-shadow: 0 4px 12px 4px rgba(0, 0, 0, 0.3);
 }
 .section4 .projects-container .project-card .top img {
-  width: 100%;
-  height: 250px;
+  max-width: 100%;
 }
 .section4 .projects-container .project-card .bottom {
   margin-top: 1.2rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
 }
 .section4 .projects-container .project-card .bottom p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+.section4 .projects-container .project-card .bottom p:nth-child(1) {
+  font-weight: 800;
 }
 .section4 .projects-container .project-card .bottom p:nth-child(2) {
   margin-top: 1.2rem;
-  font-weight: 800;
+}
+.section4 .projects-container .project-card .tech {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.section4 .projects-container .project-card .tech > p {
+  font-weight: 700;
+}
+.section4 .projects-container .project-card .tech div {
+  justify-content: space-around;
+  align-items: center;
+}
+.section4 .projects-container .project-card .tech div p {
+  font-weight: 500;
+}
+.section4 .projects-container .project-card .tech div button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2.5px;
+  background-color: #f8f9fa;
+}
+.section4 .projects-container .project-card .tech div button:hover {
+  background-color: rgb(219, 216, 216);
+}
+
+.section5 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.section5 .title {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.section5 .about-container {
+  align-items: flex-start;
+}
+.section5 .about-container .left {
+  width: 50%;
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section5 .about-container .left .bg {
+  width: 95%;
+  height: 65%;
+  background-color: #bca900;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.section5 .about-container .left img {
+  width: 100%;
+}
+.section5 .about-container .right {
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.section5 .about-container .right h1 {
+  font-size: 3.5rem;
+}
+.section5 .about-container .right p:nth-child(2) {
+  font-weight: 500;
+}
+.section5 .about-container .right p:nth-child(3) {
+  font-weight: 300;
+}
+.section5 .about-container .right a {
+  color: #0029fe;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.section5 .about-container .right a:hover {
+  text-decoration: underline;
+}
+.section5 .about-container .right > div {
+  flex-direction: column;
+}
+.section5 .about-container .right > div .tag {
+  font-weight: 500;
+}
+.section5 .about-container .right > div div {
+  display: flex;
+  gap: 3rem;
+}
+.section5 .about-container .right > div span {
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+}
+.section5 .about-container .right > div span:hover {
+  cursor: pointer;
+}
+
+.section6 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  margin-bottom: 8rem;
+}
+.section6 .socials {
+  padding: 4rem;
+  gap: 8rem;
+}
+.section6 .socials .icon-socials {
+  height: 80px;
+}
+.section6 .socials div i {
+  font-size: 80px;
+}
+.section6 .email-section {
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.section6 .email-section .email {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section6 .email-section .email:hover {
+  background-color: #f8f9fa;
+}
+.section6 .email-section .email a {
+  color: #000;
+  font-size: 2rem;
+}
+.section6 .email-section .email .send {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #bca900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+footer {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+footer .footer-container {
+  max-width: 1440px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+footer .footer-container .footer-top {
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .footer-container .footer-top div {
+  flex-direction: column;
+}
+footer .footer-container .footer-top div h3 {
+  text-transform: uppercase;
+}
+footer .footer-container .footer-top div ul {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .footer-container .footer-top div ul li:hover {
+  color: #fcc419;
+  cursor: pointer;
+}
+footer .footer-bottom {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
