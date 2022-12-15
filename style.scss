@@ -460,6 +460,7 @@ a {
 
         div {
           display: flex;
+          justify-content: space-between;
           gap: 3rem;
         }
         span {
@@ -613,8 +614,12 @@ footer {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 100%;
+    font-size: 50%;
   }
+
+  // body {
+  //   font-size: 1rem !important;
+  // }
 
   .primary-navbar {
     font-size: 1rem;
@@ -670,7 +675,7 @@ footer {
       }
 
       button {
-        padding: 10px 7.5px;
+        padding: 1rem 2rem;
         border-radius: 5px;
         font-size: 16px;
       }
@@ -706,6 +711,94 @@ footer {
     gap: 1rem;
     .section3 {
       width: 100%;
+
+      .icon-skills {
+        height: 40px;
+      }
     }
+  }
+
+  .section4 {
+    .projects-container {
+      grid-template-columns: 1fr;
+
+      .project-card {
+        font-size: 1rem;
+        .bottom {
+          p {
+            font-size: 1rem;
+          }
+        }
+
+        .tech {
+          div {
+            &:nth-child(3) {
+              flex-direction: column;
+
+              button {
+                width: 90%;
+                margin-top: 1rem;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section5 {
+    width: 90%;
+
+    .title {
+      margin-bottom: 0;
+    }
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+
+      .right {
+        width: 100%;
+        text-align: center;
+        h1 {
+          font-size: 32px;
+        }
+
+        a {
+          font-size: 1.5rem;
+        }
+
+        > div {
+          .tag {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .section6 {
+    .socials {
+      .icon-socials {
+        height: 40px;
+      }
+      div {
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .email-section {
+      .email {
+        background-color: $primary-color-shade;
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  footer {
   }
 }

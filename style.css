@@ -356,6 +356,7 @@ a {
 }
 .section5 .about-container .right > div div {
   display: flex;
+  justify-content: space-between;
   gap: 3rem;
 }
 .section5 .about-container .right > div span {
@@ -473,7 +474,7 @@ footer .footer-bottom {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 100%;
+    font-size: 50%;
   }
   .primary-navbar {
     font-size: 1rem;
@@ -521,7 +522,7 @@ footer .footer-bottom {
     letter-spacing: 0;
   }
   .section1 .right button {
-    padding: 10px 7.5px;
+    padding: 1rem 2rem;
     border-radius: 5px;
     font-size: 16px;
   }
@@ -550,5 +551,60 @@ footer .footer-bottom {
   }
   .tech-stacks .section3 {
     width: 100%;
+  }
+  .tech-stacks .section3 .icon-skills {
+    height: 40px;
+  }
+  .section4 .projects-container {
+    grid-template-columns: 1fr;
+  }
+  .section4 .projects-container .project-card {
+    font-size: 1rem;
+  }
+  .section4 .projects-container .project-card .bottom p {
+    font-size: 1rem;
+  }
+  .section4 .projects-container .project-card .tech div:nth-child(3) {
+    flex-direction: column;
+  }
+  .section4 .projects-container .project-card .tech div:nth-child(3) button {
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  .section5 {
+    width: 90%;
+  }
+  .section5 .title {
+    margin-bottom: 0;
+  }
+  .section5 .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section5 .about-container .right {
+    width: 100%;
+    text-align: center;
+  }
+  .section5 .about-container .right h1 {
+    font-size: 32px;
+  }
+  .section5 .about-container .right a {
+    font-size: 1.5rem;
+  }
+  .section5 .about-container .right > div .tag {
+    margin: 0 auto;
+  }
+  .section6 .socials .icon-socials {
+    height: 40px;
+  }
+  .section6 .socials div i {
+    font-size: 40px;
+  }
+  .section6 .email-section .email {
+    background-color: #f8f9fa;
+  }
+  .section6 .email-section .email a {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
