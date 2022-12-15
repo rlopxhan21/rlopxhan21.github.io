@@ -700,4 +700,12 @@ footer {
       }
     }
   }
+
+  .tech-stacks {
+    flex-direction: column;
+    gap: 1rem;
+    .section3 {
+      width: 100%;
+    }
+  }
 }

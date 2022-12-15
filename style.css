@@ -544,4 +544,11 @@ footer .footer-bottom {
   .section2 .info-container .info-divider {
     display: none;
   }
+  .tech-stacks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .tech-stacks .section3 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
