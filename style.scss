@@ -24,6 +24,7 @@ $link-color: #0029fe;
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -112,6 +113,18 @@ a {
       }
     }
   }
+
+  .sidebar {
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 // Hero Section
@@ -189,7 +202,7 @@ a {
 
 // Banner Section
 .section2 {
-  max-width: 70%;
+  width: 70%;
   background-color: $primary-color-shade;
   border-radius: 100px;
   margin: auto;
@@ -571,5 +584,120 @@ footer {
     align-items: center;
     padding-bottom: 2rem;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  html {
+    font-size: 100%;
+  }
+
+  .primary-navbar {
+    font-size: 1rem;
+
+    .line {
+      &:before {
+        left: -12.5%;
+      }
+    }
+
+    .right {
+      display: none;
+    }
+
+    .sidebar {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+
+  .primary-navbar {
+    font-size: 1rem;
+
+    .line {
+      &:before {
+        left: -12.5%;
+      }
+    }
+
+    .right {
+      display: none;
+    }
+
+    .sidebar {
+      display: block;
+    }
+  }
+
+  .section1 {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+
+    .left {
+      width: 200px;
+      justify-content: flex-end;
+      align-items: flex-start;
+      img {
+        align-self: flex-start;
+        justify-self: flex-start;
+        display: block;
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    .right {
+      margin-top: 9rem;
+      margin-bottom: 5rem;
+      align-self: center;
+      gap: 4rem;
+      .name {
+        font-size: 32px;
+        letter-spacing: 0;
+        font-weight: 600;
+      }
+
+      .tag {
+        font-size: 24px;
+        letter-spacing: 0;
+      }
+
+      button {
+        padding: 10px 7.5px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .section2 {
+    width: 90%;
+    background-color: $primary-color;
+    .info-container {
+      flex-direction: column;
+      padding: 2rem 0.5rem;
+
+      .info-lists {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        .info-content {
+          span {
+            text-align: start;
+          }
+        }
+      }
+
+      .info-divider {
+        display: none;
+      }
+    }
   }
 }
