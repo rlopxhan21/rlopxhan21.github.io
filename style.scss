@@ -762,7 +762,7 @@ footer {
     font-size: 50%;
   }
   .primary-navbar {
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     .line {
       &:before {
@@ -776,6 +776,9 @@ footer {
 
     .sidebar {
       display: block;
+      i {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -823,6 +826,7 @@ footer {
   }
 
   .section2 {
+    font-size: 1.5rem;
     width: 90%;
     background-color: $primary-color;
     .info-container {
@@ -832,7 +836,7 @@ footer {
       padding: 2rem 0.5rem;
 
       .info-lists {
-        width: 60%;
+        width: 70%;
         flex-direction: column;
         align-items: flex-start;
         gap: 4rem;
