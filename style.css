@@ -580,6 +580,9 @@ footer .footer-bottom {
   html {
     font-size: 50%;
   }
+  .navfix {
+    padding: 4rem;
+  }
   .primary-navbar {
     font-size: 1.5rem;
   }
@@ -614,7 +617,7 @@ footer .footer-bottom {
     width: 100%;
   }
   .section1 .right {
-    margin-top: 9rem;
+    margin-top: 15rem;
     margin-bottom: 5rem;
     align-self: center;
     gap: 4rem;
