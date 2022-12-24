@@ -762,6 +762,9 @@ footer .footer-bottom {
   footer .links {
     display: none;
   }
+  footer .external-links {
+    font-size: 1.3rem;
+  }
   footer .footer-bottom {
     width: 85%;
     margin: 0 auto;
