@@ -788,14 +788,14 @@ footer {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 75%;
   }
 
   .navfix {
-    padding: 4rem;
+    padding: 7rem;
   }
   .primary-navbar {
-    font-size: 1.5rem;
+    font-size: 1rem;
 
     .line {
       &:before {
@@ -810,7 +810,7 @@ footer {
     .sidebar {
       display: block;
       i {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
   }
@@ -861,27 +861,26 @@ footer {
   .section2 {
     font-size: 1.5rem;
     width: 90%;
-    background-color: $primary-color;
     .info-container {
       flex-direction: column;
-      align-items: center;
+      align-items: space-between;
       justify-content: center;
-      padding: 2rem 0.5rem;
+      // padding: 2rem 0.5rem;
 
       .info-lists {
-        width: 70%;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 4rem;
+
         .info-content {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           span {
-            text-align: start;
+            text-align: center;
           }
         }
-      }
-
-      .info-divider {
-        display: none;
       }
     }
   }
@@ -891,6 +890,7 @@ footer {
     gap: 1rem;
     .section3 {
       width: 100%;
+      background-color: $primary-color-shade;
 
       .icon-skills {
         height: 40px;
@@ -964,6 +964,9 @@ footer {
         height: 40px;
       }
       div {
+        height: 65px;
+        width: 65px;
+        background-color: $primary-color-shade;
         i {
           font-size: 40px;
         }
@@ -981,6 +984,10 @@ footer {
   }
 
   footer {
+    .links {
+      display: none;
+    }
+
     .footer-bottom {
       width: 85%;
       margin: 0 auto;

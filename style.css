@@ -601,13 +601,13 @@ footer .footer-bottom {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 75%;
   }
   .navfix {
-    padding: 4rem;
+    padding: 7rem;
   }
   .primary-navbar {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .primary-navbar .line:before {
     left: -12.5%;
@@ -619,7 +619,7 @@ footer .footer-bottom {
     display: block;
   }
   .primary-navbar .sidebar i {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .section1 {
     flex-direction: column;
@@ -662,25 +662,25 @@ footer .footer-bottom {
   .section2 {
     font-size: 1.5rem;
     width: 90%;
-    background-color: #fff;
   }
   .section2 .info-container {
     flex-direction: column;
-    align-items: center;
+    align-items: space-between;
     justify-content: center;
-    padding: 2rem 0.5rem;
   }
   .section2 .info-container .info-lists {
-    width: 70%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
   }
-  .section2 .info-container .info-lists .info-content span {
-    text-align: start;
+  .section2 .info-container .info-lists .info-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .section2 .info-container .info-divider {
-    display: none;
+  .section2 .info-container .info-lists .info-content span {
+    text-align: center;
   }
   .tech-stacks {
     flex-direction: column;
@@ -688,6 +688,7 @@ footer .footer-bottom {
   }
   .tech-stacks .section3 {
     width: 100%;
+    background-color: #f8f9fa;
   }
   .tech-stacks .section3 .icon-skills {
     height: 40px;
@@ -736,6 +737,11 @@ footer .footer-bottom {
   .section6 .socials .icon-socials {
     height: 40px;
   }
+  .section6 .socials div {
+    height: 65px;
+    width: 65px;
+    background-color: #f8f9fa;
+  }
   .section6 .socials div i {
     font-size: 40px;
   }
@@ -744,6 +750,9 @@ footer .footer-bottom {
   }
   .section6 .email-section .email a {
     font-size: 1.5rem;
+  }
+  footer .links {
+    display: none;
   }
   footer .footer-bottom {
     width: 85%;
