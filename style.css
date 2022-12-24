@@ -242,7 +242,6 @@ a {
 }
 .section4 .projects-container {
   width: 100%;
-  padding: 0 2rem 0 0;
   justify-content: space-between;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   place-items: center;
@@ -309,6 +308,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 8rem;
+  margin: auto;
 }
 .section5 .title {
   font-size: 2rem;
@@ -319,7 +319,7 @@ a {
 }
 .section5 .about-container .left {
   width: 50%;
-  padding: 0 2rem;
+  padding: 0 1rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -696,6 +696,7 @@ footer .footer-bottom {
   .section4 .projects-container {
     grid-template-columns: 1fr;
     justify-content: center;
+    align-items: center;
   }
   .section4 .projects-container .project-card {
     font-size: 1rem;
@@ -720,6 +721,9 @@ footer .footer-bottom {
   .section5 .about-container {
     flex-direction: column;
     align-items: center;
+  }
+  .section5 .about-container .left {
+    padding-right: 0;
   }
   .section5 .about-container .right {
     width: 100%;

@@ -324,7 +324,6 @@ a {
 
   .projects-container {
     width: 100%;
-    padding: 0 2rem 0 0;
 
     justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -406,6 +405,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 8rem;
+  margin: auto;
 
   .title {
     font-size: 2rem;
@@ -416,7 +416,7 @@ a {
     align-items: flex-start;
     .left {
       width: 50%;
-      padding: 0 2rem;
+      padding: 0 1rem;
       position: relative;
 
       display: flex;
@@ -902,6 +902,7 @@ footer {
     .projects-container {
       grid-template-columns: 1fr;
       justify-content: center;
+      align-items: center;
 
       .project-card {
         font-size: 1rem;
@@ -937,6 +938,10 @@ footer {
     .about-container {
       flex-direction: column;
       align-items: center;
+
+      .left {
+        padding-right: 0;
+      }
 
       .right {
         width: 100%;
