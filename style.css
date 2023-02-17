@@ -64,6 +64,9 @@ a {
   position: absolute;
   left: -30px;
 }
+.primary-navbar .right #check, .primary-navbar .right .menu-icon {
+  display: none;
+}
 .primary-navbar .right .navigation {
   justify-content: center;
   align-items: center;
@@ -494,8 +497,28 @@ footer .footer-bottom {
   .primary-navbar .line:before {
     left: -12.5%;
   }
-  .primary-navbar .right {
-    display: none;
+  .primary-navbar .right .menu-icon {
+    display: block;
+  }
+  .primary-navbar .right .menu-icon:hover {
+    cursor: pointer;
+  }
+  .primary-navbar .right .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    top: 4rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    left: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  .primary-navbar .right .navigation li {
+    padding-left: 1rem;
+  }
+  .primary-navbar .right #check:checked ~ ul {
+    left: calc(100% - 15rem);
   }
   .primary-navbar .sidebar {
     display: block;
@@ -615,14 +638,21 @@ footer .footer-bottom {
   .primary-navbar .line:before {
     left: -12.5%;
   }
-  .primary-navbar .right {
-    display: none;
+  .primary-navbar .right .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    top: 3rem;
+    height: 100vh;
+    position: fixed;
+    left: 100%;
+    transition: 0.5s ease-in-out;
   }
-  .primary-navbar .sidebar {
-    display: block;
+  .primary-navbar .right .navigation li {
+    padding-left: 1rem;
   }
-  .primary-navbar .sidebar i {
-    font-size: 1rem;
+  .primary-navbar .right #check:checked ~ ul {
+    left: calc(100% - 15rem);
   }
   .section1 {
     flex-direction: column;
@@ -725,47 +755,41 @@ footer .footer-bottom {
     flex-direction: column;
     align-items: center;
   }
-  .section5 .about-container .left {
-    padding-right: 0;
-  }
-  .section5 .about-container .right {
-    width: 100%;
-    text-align: center;
-  }
-  .section5 .about-container .right h1 {
+  .section5 .about-container h1 {
     font-size: 32px;
   }
-  .section5 .about-container .right a {
+  .section5 .about-container a {
     font-size: 1.5rem;
   }
-  .section5 .about-container .right > div .tag {
+  .section5 .about-container > div .tag {
     margin: 0 auto;
   }
-  .section6 .socials .icon-socials {
-    height: 40px;
-  }
-  .section6 .socials div {
-    height: 65px;
-    width: 65px;
-    background-color: #f8f9fa;
-  }
-  .section6 .socials div i {
-    font-size: 40px;
-  }
-  .section6 .email-section .email {
-    background-color: #f8f9fa;
-  }
-  .section6 .email-section .email a {
-    font-size: 1.5rem;
-  }
-  footer .links {
-    display: none;
-  }
-  footer .external-links {
-    font-size: 1.3rem;
-  }
-  footer .footer-bottom {
-    width: 85%;
-    margin: 0 auto;
-  }
+}
+.section6 .socials .icon-socials {
+  height: 40px;
+}
+.section6 .socials div {
+  height: 65px;
+  width: 65px;
+  background-color: #f8f9fa;
+}
+.section6 .socials div i {
+  font-size: 40px;
+}
+.section6 .email-section .email {
+  background-color: #f8f9fa;
+}
+.section6 .email-section .email a {
+  font-size: 1.5rem;
+}
+
+footer .links {
+  display: none;
+}
+footer .external-links {
+  font-size: 1.3rem;
+}
+footer .footer-bottom {
+  width: 85%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
